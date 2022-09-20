@@ -1,0 +1,36 @@
+<h1>Rifa Yakult 2022</h1>
+<h2>Datos del usuario</h2>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <td>{{rifa.nombre}}</td>
+    </tr>
+    <tr>
+        <th>Apellido</th>
+        <td>{{rifa.apellido}}</td>
+    </tr>
+    <tr>
+        <th>Correo</th>
+        <td>{{rifa.correo}}</td>
+    </tr>
+    <tr>
+        <th>Teléfono</th>
+        <td>{{rifa.telefono}}</td>
+    </tr>
+    <tr>
+        <th>Boleto</th>
+        <td>{{rifa.boleto}}</td>
+    </tr>
+    <tr>
+        <th>Regalo</th>
+        <td>{{rifa.regalo}}</td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>
+            <form method="POST" action="/rifas/{{ rifa.id }}?_method=DELETE">
+                <input type="submit" value="DELETE ?">
+            </form>
+        </td>
+    </tr>
+</table>

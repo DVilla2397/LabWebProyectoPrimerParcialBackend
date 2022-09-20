@@ -1,0 +1,26 @@
+<h1> Modificación de datos </h1>
+<form method="POST" action="/rifas/{{ rifa.id }}?_method=PUT">
+    <div>
+        <label for="boleto"> Boleto: </label>
+        <input type="text" id="boleto" name="boleto" value="{{ rifa.boleto }}">
+    </div>
+    <div>
+        <label for="nombre"> Nombre: </label>
+        <input type="text" id="nombre" name="nombre" value="{{ rifa.nombre }}">
+    </div>
+    <div>
+        <label for="apellido"> Apellido: </label>
+        <input type="text" id="apellido" name="apellido" value="{{ rifa.apellido }}">
+    </div>
+    <div>
+        <label for="correo"> Correo: </label>
+        <input type="text" id="correo" name="correo" value="{{ rifa.correo }}">
+    </div>
+    <div>
+        <label for="telefono"> Teléfono: </label>
+        <input type="text" id="telefono"  name="telefono" value="{{ rifa.telefono }}">
+    </div>
+    <div>
+        <input type="submit" value="Edit">
+    </div>
+</form>

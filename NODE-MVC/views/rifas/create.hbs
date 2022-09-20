@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../../style.css"/>
+    </head>
+    <body>
+        <div class="text-center">
+            <h1 class="display-5 fw-bold">Rifa Yakult 2022</h1>
+            <br>
+            <a href="/"> Regresar </a>
+        </div>
+        <div class="container mt-5 mb-5 d-flex justify-content-center">
+            <form class="card px-1 py-4" method="POST" action="/rifas">
+                <h1 class="card-body text-center">Ingresa tus datos:</h1>
+                <div class="form-floating">
+                    <label for="boleto">Boleto: </label>
+                    <input class="form-control" type="text" id="boleto" name="boleto" placeholder="boleto">
+                </div>
+                <div class="form-floating">
+                    <label for="nombre">Nombre: </label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-floating">
+                    <label for="apellido">Apellido: </label>
+                    <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-floating">
+                    <label for="correo">Correo: </label>
+                    <input class="form-control" type="text" id="correo" name="correo" placeholder="Correo">
+                </div>
+                <div class="form-floating">
+                    <label for="telefono">Teléfono: </label>
+                    <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Telefono">
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-primary" value="Guardar datos">
+                        
+                </div>
+            </form> 
+        </div>
+    </body>
+</html>
